@@ -45,4 +45,25 @@ void unsorted() {
 		cout << a[j] << endl;                  // output ke layar
 	}
 	cout << endl;
+}
+
+void display() {  //prosedur untuk menampilkan hasil 
+	cout << endl;                          //output baris kosong 
+	cout << "==========================" << endl; // output ke layar 
+	cout << "ELEMENT ARRAY YANG BELUM TERSUSUN" << endl; // output ke layar
+	cout << "==========================" << endl; //output ke layar
+	for (int j = 0; j < n; j++) {   // looping dengan j mulai deari 0 hingga n-1
+		cout << a[j] << endl;        // output ke layar
+	}
+	cout << endl;                   // output baris kosong
+}
+
+int main() {              //memsnggil prosedur read 
+	input();              //memanggil prosedur unsored() dari 
+	unsorted();           //memanggil prosedur bubbelshortarray()
+	buubleShortArray();
+	display();
+
+	return 0;
+}
 
