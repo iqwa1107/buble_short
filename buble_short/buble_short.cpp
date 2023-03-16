@@ -24,4 +24,25 @@ void input() {            // prosedur untuk input
 		cin >> a[i];
 	}
 }
+void buubleShortArray() {      // prosedur untuk mengurutkan array dengan metode buuble short 
+	for (int i = 1; i < n; i++) {            // loping dengan i dari 1 hingga n-1
+		for (int j = 0; j < n - i; j++) {    // jika nilai pada a [j] lebih besar dari 
+			if (a[j] > a[j + 1]) {
+				int temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			};
+		}
+	}
+}
+
+void unsorted() {
+	cout << endl;                             // output berisi kosong 
+	cout << "========================" << endl; // output ke layar 
+	cout << "ELEMENT ARRAY YANG BELUM TERSUSUN" << endl; // output ke latar
+	cout << "=======================" << endl; //output ke layar
+	for (int j = 0; j < n; j++) {                // looping dengan j di mulai dari 0 hingga n-1
+		cout << a[j] << endl;                  // output ke layar
+	}
+	cout << endl;
 
